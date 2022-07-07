@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./register.js" defer></script>
+    <title>Register</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-top hidden lg:block">
+            <div class="container_content mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <div class="header-contact">
+                        <div class="text-gray-300 font-medium text-base">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="ml-2" href="#">info@yourmail.com</a>
+                        </div>
+                        <div class="text-gray-300 text-base ml-5">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="ml-2">+0123-456-5678</span>
+                        </div>
+                    </div>
+                    <div class="header-contact">
+                        <div class="social flex text-gray-300 font-medium text-base ml-5 w-full">
+                            <span class="mr-3">Follow Us :</span>
+                            <div class="grid grid-cols-5 gap-3 items-center">
+                                <i class="fa-brands fa-facebook-f justify-self-center"></i>
+                                <i class="fa-brands fa-youtube justify-self-center"></i>
+                                <i class="fa-brands fa-twitter justify-self-center"></i>
+                                <i class="fa-brands fa-instagram justify-self-center"></i>
+                                <i class="fa-brands fa-linkedin-in justify-self-center"></i>
+                            </div>
+                        </div>
+                        <div class="header-register flex">
+                            <div class="ml-6">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="ml-6 relative">
+                                <a href="./register.html">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation ">
+            <div class="container_content mx-auto px-4  ">
+                <div class="flex justify-between items-center relative z-40">
+                    <a class="navbar-brand flex items-center" href="#">
+                        <img src="./src/imgs/logo.png" alt="Logo">
+                    </a>
+                    <div class="flex">
+                        <div class="navbar-collapse">
+                            <div class="nav-item active">
+                                <a href="index.html">Home</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Pages</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Courses</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Events</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Teachers</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Blogs</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Shop</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Contact</a>
+
+                            </div>
+                        </div>
+
+                        <div class="header-icon ml-5">
+                            <div class="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                            <div class="icon-item ml-8 lg:ml-0">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon-item ml-2 lg:ml-8">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="register-banner">
+        <div class="container_content mx-auto px-4">
+            <div class="banner-container">
+                <h2>Student Registration</h2>
+                <div class="flex banner-bottom">
+                    <p>Home </p>
+                    <span>
+                        Student Registration
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-register">
+        <div class="container_content mx-auto px-4">
+            <form class="myform ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="form-item col-span-1">
+                        <label for="firstName">First name</label>
+                        <input name="firstName" id="firstName" placeholder="First Name" />
+                        <span class="error" id="firstName_error"></span>
+                    </div>
+
+                    <div class="form-item col-span-1">
+                        <label for="lastName">Last name</label>
+                        <input name="lastName" id="lastName" placeholder="Last Name" />
+                        <span class="error" id="lastName_error"></span>
+
+                    </div>
+
+                    <div class="form-item col-span-1">
+                        <label for="userName">User name</label>
+                        <input name="userName" id="userName" placeholder="User Name" />
+                        <span class="error" id="userName_error"></span>
+
+                    </div>
+
+                    <div class="form-item col-span-1">
+                        <label for="email">E-mail</label>
+                        <input name="email" id="email" placeholder="E-mail" />
+                        <span class="error" id="email_error"></span>
+
+                    </div>
+
+                    <div class="form-item col-span-1">
+                        <label for="passWord">Password</label>
+                        <input type="password" name="passWord" id="passWord" placeholder="Password" />
+                        <span class="error" id="passWord_error"></span>
+
+                    </div>
+
+                    <div class="form-item col-span-1">
+                        <label for="passWordConfirm">Password confirmation</label>
+                        <input type="password" name="passWordConfirm" id="passWordConfirm" placeholder="Password confirmation" />
+                        <span class="error" id="passWordConfirm_error"></span>
+
+                    </div>
+                </div>
+                <div style="align-self: end;">
+                    <button type="submit" class="form-submit">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container_content mx-auto px-4 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 sm:gap-8">
+                    <div class=" sm:col-span-2 md:col-span-1 lg:col-span-4">
+                        <div class="footer-about">
+                            <div class="logo">
+                                <a href="#"><img src="./src/imgs/logo-2.png" alt="Logo"></a>
+                            </div>
+                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh
+                                id elit. Duis sed odio sit amet nibh vulputate.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-1 md:col-span-1 lg:col-span-3">
+                        <div class="footer-link ">
+                            <div class="footer-title">
+                                <h6>Sitemap</h6>
+                            </div>
+                            <div class="flex w-full">
+                                <ul class="flex-1">
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>About us</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Courses</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>News</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Event</a></li>
+                                </ul>
+                                <ul class="flex-1">
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Shop</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Teachers</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-1 md:col-span-1 lg:col-span-2">
+                        <div class="footer-link ">
+                            <div class="footer-title ">
+                                <h6>Support</h6>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-2 md:col-span-1 lg:col-span-3">
+                        <div class="footer-address ">
+                            <div class="footer-title ">
+                                <h6>Contact Us</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>+3 123 456 789</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>info@yourmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container_content mx-auto px-4 flex md:flex-row flex-col justify-between items-center">
+                <p class="text-white">© Copyrights 2020 Edubin All rights reserved. </p>
+                <p class="text-white">Designed by <span>quannt86</span> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

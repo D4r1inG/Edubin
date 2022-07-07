@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+    <title>Edubin</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="myModal">
+        <div class="modal-content">
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <iframe src="https://www.youtube.com/embed/GsPUwnzbCkE" title="tiếng chó sủa hay và ấm" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-top hidden lg:block">
+            <div class="container_content mx-auto px-4">
+                <div class="flex justify-between items-center">
+                    <div class="header-contact">
+                        <div class="text-gray-300 font-medium text-base">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="ml-2" href="#">info@yourmail.com</a>
+                        </div>
+                        <div class="text-gray-300 text-base ml-5">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="ml-2">+0123-456-5678</span>
+                        </div>
+                    </div>
+                    <div class="header-contact">
+                        <div class="social flex text-gray-300 font-medium text-base ml-5 w-full">
+                            <span class="mr-3">Follow Us :</span>
+                            <div class="grid grid-cols-5 gap-3 items-center">
+                                <i class="fa-brands fa-facebook-f justify-self-center"></i>
+                                <i class="fa-brands fa-youtube justify-self-center"></i>
+                                <i class="fa-brands fa-twitter justify-self-center"></i>
+                                <i class="fa-brands fa-instagram justify-self-center"></i>
+                                <i class="fa-brands fa-linkedin-in justify-self-center"></i>
+                            </div>
+                        </div>
+                        <div class="header-register flex">
+                            <div class="ml-6">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="ml-6 relative">
+                                <a href="./register.html">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation ">
+            <div class="container_content mx-auto px-4  ">
+                <div class="flex justify-between items-center relative z-40">
+                    <a class="navbar-brand flex items-center" href="#">
+                        <img src="./src/imgs/logo.png" alt="Logo">
+                    </a>
+                    <div class="flex">
+                        <div class="navbar-collapse">
+                            <div class="nav-item active">
+                                <a href="index.html">Home</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Pages</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Courses</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Events</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Teachers</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Blogs</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Shop</a>
+                                <button class="sub-nav-toggler">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="nav-item">
+                                <a href="index.html">Contact</a>
+
+                            </div>
+                        </div>
+
+                        <div class="header-icon ml-5">
+                            <div class="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                            <div class="icon-item ml-8 lg:ml-0">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon-item ml-2 lg:ml-8">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section id="carousel" class="relative slider-active">
+        <span class="prev-btn carousel-arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+        </span>
+
+        <div class="single-slider bg_cover bg-1 slider-active">
+            <div class="container_content mx-auto md:px-4 ">
+                <div class="carousel-item ">
+                    <h1 class="slider-header">Choose the
+                        right theme for education</h1>
+                    <p class="slider-text">Donec vitae
+                        sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt Sed fringilla mauri amet nibh.</p>
+                    <div class="flex">
+                        <a class="btn-main mr-5" href="#">Read More</a>
+                        <a class="btn-main" href="#">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider bg_cover bg-2">
+            <div class="container_content mx-auto  md:px-4 ">
+                <div class="carousel-item ">
+                    <h1 class="slider-header">Choose the
+                        right theme for education</h1>
+                    <p class="slider-text">Donec vitae
+                        sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt Sed fringilla mauri amet nibh.</p>
+                    <div class="flex">
+                        <a class="btn-main mr-5" href="#">Read More</a>
+                        <a class="btn-main" href="#">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-slider bg_cover bg-3">
+            <div class="container_content mx-auto  md:px-4">
+                <div class="carousel-item ">
+                    <h1 class="slider-header">Choose the
+                        right theme for education</h1>
+                    <p class="slider-text">Donec vitae
+                        sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt Sed fringilla mauri amet nibh.</p>
+                    <div class="flex">
+                        <a class="btn-main mr-5" href="#">Read More</a>
+                        <a class="btn-main" href="#">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="next-btn carousel-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+    </section>
+
+    <!-- Category -->
+    <section id="category">
+        <div class="container_content mx-auto px-4">
+            <div class="category-content">
+                <div class="flex flex-col md:grid md:grid-cols-3 lg:gap-0 items-center">
+                    <div class="category-text col-span-1 " >
+                        <h2 class="text-center md:text-left">Best platform to learn everything</h2>
+                    </div>
+                    <div class="col-span-2 w-full">
+                        <div class=" category-slider ">
+                            <span class="category-prev category-arrow">
+                                <i class="fa fa-angle-left"></i>
+                            </span>
+
+
+                            <div class="category-container ">
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-1">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-1.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Language</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-2">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-2.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Business</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-3">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-3.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Literature</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-1">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-1.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Language</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-2">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-2.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Business</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="category-item">
+                                    <a href="#">
+                                        <span class="single-category text-center color-3">
+                                            <span class="icon">
+                                                <img src="./src/imgs/category-3.png" alt="Icon">
+                                            </span>
+                                            <div class="cont">
+                                                <span>Literature</span>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <span class="category-next category-arrow">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container_content mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="about-left col-left">
+                    <div class="section-title">
+                        <h5>
+                            About us
+                        </h5>
+                        <h2>Welcome to Edubin </h2>
+                    </div>
+                    <div class="about-text">
+                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
+                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet .
+                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris.
+                        </p>
+                        <p>
+                            auci elit cons
+                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet .
+                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris
+                        </p>
+                        <a href="#" class="btn-main">Learn More</a>
+                    </div>
+                </div>
+                <div class="about-right col-right w-full lg:w-1/2 ">
+                    <h3>Upcoming events</h3>
+                    <ul>
+                        <li>
+                            <div class="single-event">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2 December 2018</span>
+                                <a href="#">Campus clean workshop</a>
+                                <span><i class="fa-regular fa-clock"></i> 10:00 Am - 3:00 Pm</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Rc Auditorim</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-event">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2 December 2018</span>
+                                <a href="#">Tech submit</a>
+                                <span><i class="fa-regular fa-clock"></i> 10:00 Am - 3:00 Pm</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Rc Auditorim</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-event bd-n">
+                                <span><i class="fa-regular fa-calendar-days"></i> 2 December 2018</span>
+                                <a href="#">Environment conference</a>
+                                <span><i class="fa-regular fa-clock"></i> 10:00 Am - 3:00 Pm</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Rc Auditorim</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about-bg">
+            <img src="./src/imgs/bg-1.png" alt="About">
+        </div>
+    </section>
+
+    <!-- Apply -->
+    <section id="apply">
+        <div class="container_content mx-auto px-4">
+            <div class="apply-container">
+                <div class="flex flex-col lg:grid lg:grid-cols-2">
+                    <div class="apply-left pd-apply">
+                        <h3>Apply for fall 2019</h3>
+                        <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat
+                            ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
+                        <a href="#" class="btn-main">Apply Now</a>
+                    </div>
+                    <div class="apply-right pd-apply">
+                        <h3>Apply for scholarship</h3>
+                        <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat
+                            ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
+                        <a href="#" class="btn-main">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="course">
+        <div class="container_content mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="section-title course-pb">
+                    <h5>
+                        Our course
+                    </h5>
+                    <h2>Featured courses</h2>
+                </div>
+                <div class="course-arrow hidden md:flex">
+                    <span class="course-prev" style="display: block;"><i class="fa fa-angle-left"></i></span>
+                    <span class="course-next ml-2" style="display: block;"><i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+
+            <div class="course-container flex ">
+
+                <!-- <div class="single-course">
+                    <div class="course-top relative">
+                        <div>
+                            <img src="./src/imgs/cu-4.jpg" alt="Course">
+                        </div>
+                        <div class="level">
+                            beginner
+                        </div>
+                        <div class="save">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <ul>
+                            <li class="course-rated"><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>3.60 (5)</span>
+                        <a href="#">
+                            <h4>Learn basic javascript from start for beginner</h4>
+                        </a>
+                        <ul class="user">
+                            <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
+                            <li><a href="#"><i class="fa-regular fa-clock"></i><span>10</span></a></li>
+                        </ul>
+                        <div class="course-teacher flex items-center justify-between">
+                            <div class="flex items-center">
+                                <a href="#">
+                                    <img src="./src/imgs/t-1.jpg" alt="teacher">
+                                </a>
+                                <a href="#" class="ml-3">
+                                    by <span>
+                                        Mark anthem
+                                    </span>
+                                    in
+                                    <span>
+                                        Languages
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-bottom">
+                        <div class="flex justify-between items-center">
+                            <div class="bottom-item">
+                                free
+                            </div>
+                            <div class="bottom-item">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Get enrolled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities" class="relative">
+        <div class="container_content mx-auto px-4 z-10 relative">
+            <div class="flex flex-col lg:grid lg:grid-cols-11 items-center">
+                <div class="col-span-5 flex justify-center items-center">
+                    <div class="facilities-left">
+                        <button class="Video-popup">
+                            <i class="fa fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-span-6 facilities-m">
+                    <div class="facilities-right">
+                        <h3>Our Facilities</h3>
+                        <ul>
+                            <li>
+                                <div class="single-feature">
+                                    <div class="icon">
+                                        <img src="./src/imgs/f-1.png" alt="icon">
+                                    </div>
+                                    <div class="feature-body">
+                                        <h4>Global Certificate</h4>
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
+                                            quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-feature">
+                                    <div class="icon">
+                                        <img src="./src/imgs/f-2.png" alt="icon">
+                                    </div>
+                                    <div class="feature-body">
+                                        <h4>Alumni Support</h4>
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
+                                            quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-feature">
+                                    <div class="icon">
+                                        <img src="./src/imgs/f-3.png" alt="icon">
+                                    </div>
+                                    <div class="feature-body">
+                                        <h4>Books &amp; Library</h4>
+                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
+                                            quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="facilities-bg"></div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="teacher">
+        <div class="container_content mx-auto px-4">
+            <div class="flex flex-col lg:flex-row lg:justify-between">
+                <div class="col-left">
+                    <div class="section-title">
+                        <h5>Featured Teachers</h5>
+                        <h2>Meet Our teachers</h2>
+                    </div>
+                    <div class="teacher-left-body">
+                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
+                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet .
+                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons
+                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet .
+                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
+                        <a href="#" class="btn-main">Career with us</a>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-5 lg:gap-7">
+                        <div class="single-teachers relative text-center">
+                            <div class="teacher-image">
+                                <img src="./src/imgs/t-1 (1).jpg" alt="Teachers">
+                            </div>
+                            <div class="teacher-name">
+                                <a href="#">
+                                    <h6>
+                                        Mark Alen
+                                    </h6>
+                                </a>
+                                <span>Vice Chancellor</span>
+                            </div>
+                        </div>
+
+                        <div class="single-teachers relative text-center">
+                            <div class="teacher-image">
+                                <img src="./src/imgs/t-2.jpg" alt="Teachers">
+                            </div>
+                            <div class="teacher-name">
+                                <a href="#">
+                                    <h6>
+                                        David card
+                                    </h6>
+                                </a>
+                                <span>Pro Chancellor</span>
+                            </div>
+                        </div>
+
+                        <div class="single-teachers relative text-center">
+                            <div class="teacher-image">
+                                <img src="./src/imgs/t-3.jpg" alt="Teachers">
+                            </div>
+                            <div class="teacher-name">
+                                <a href="#">
+                                    <h6>
+                                        Rebeka Alig
+                                    </h6>
+
+                                </a>
+                                <span>Pro Chancellor</span>
+                            </div>
+                        </div>
+
+                        <div class="single-teachers relative text-center">
+                            <div class="teacher-image">
+                                <img src="./src/imgs/t-4.jpg" alt="Teachers">
+                            </div>
+                            <div class="teacher-name">
+                                <a href="#">
+                                    <h6>
+                                        Hanna Bein
+                                    </h6>
+                                </a>
+                                <span>Aerobics head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <div class="container_content mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="section-title">
+                    <h5>Publications</h5>
+                    <h2>From Store </h2>
+                </div>
+                <a href="#" class="btn-main self-center">All Products</a>
+            </div>
+            <div class="lg:flex lg:justify-between grid md:grid-cols-2 grid-cols-1 w-3/5 mx-auto md:w-full gap-8">
+                <div class="single-publication mt-30 text-center">
+                    <div class="publication-image">
+                        <img src="./src/imgs/book-1.jpg" alt="Publication">
+                        <div class="add-cart">
+                            <ul>
+                                <li><a href="#" class="mr-3"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publication-content">
+                        <h2>Book 9</h2>
+                        <p>$45</p>
+                    </div>
+                </div>
+                <div class="single-publication mt-30 text-center">
+                    <div class="publication-image">
+                        <img src="./src/imgs/book-2.jpg" alt="Publication">
+                        <div class="add-cart">
+                            <ul>
+                                <li><a href="#" class="mr-3"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publication-content">
+                        <h2>React JS</h2>
+                        <p>$20</p>
+                    </div>
+                </div>
+                <div class="single-publication mt-30 text-center">
+                    <div class="publication-image">
+                        <img src="./src/imgs/book-3.jpg" alt="Publication">
+                        <div class="add-cart">
+                            <ul>
+                                <li><a href="#" class="mr-3"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publication-content">
+                        <h2>Learn Javascript</h2>
+                        <p>$65</p>
+                    </div>
+                </div>
+                <div class="single-publication mt-30 text-center">
+                    <div class="publication-image">
+                        <img src="./src/imgs/book-4.jpg" alt="Publication">
+                        <div class="add-cart">
+                            <ul>
+                                <li><a href="#" class="mr-3"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="publication-content">
+                        <h2>Book 6</h2>
+                        <p>$90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback" class="relative">
+        <div class="container_content mx-auto px-4 z-10 relative">
+            <div class="section-title">
+                <h5>Testimonial</h5>
+                <h2>What they say</h2>
+            </div>
+            <div class="feedback-container">
+
+                <div class="single-feedback">
+                    <div class="feedback-left">
+                        <img src="./src/imgs/feed-1.jpg" alt="feedback">
+                        <div class="quote">
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="feedback-right">
+                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed
+                            odio sit amet sem nibh id elit sollicitudirem </p>
+                        <h6>Rubina Helen</h6>
+                        <span>Bsc, Engineering</span>
+                    </div>
+                </div>
+
+                <div class="single-feedback">
+                    <div class="feedback-left">
+                        <img src="./src/imgs/feed-2.jpg" alt="feedback">
+                        <div class="quote">
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="feedback-right">
+                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed
+                            odio sit amet sem nibh id elit sollicitudirem </p>
+                        <h6>Rubina Helen</h6>
+                        <span>Bsc, Engineering</span>
+                    </div>
+                </div>
+
+                <div class="single-feedback">
+                    <div class="feedback-left">
+                        <img src="./src/imgs/feed-3.jpg" alt="feedback">
+                        <div class="quote">
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                    </div>
+                    <div class="feedback-right">
+                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed
+                            odio sit amet sem nibh id elit sollicitudirem </p>
+                        <h6>Rubina Helen</h6>
+                        <span>Bsc, Engineering</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="new">
+        <div class="container_content mx-auto px-4">
+            <div class="section-title">
+                <h5>From the News</h5>
+                <h2>Latest news</h2>
+            </div>
+
+            <div class="new-container flex lg:justify-between lg:flex-row flex-col ">
+
+                <div class="new-card">
+                    <div class="new-top">
+                        <img src="./src/imgs/news-1.jpg" />
+                    </div>
+                    <div class="new-bottom">
+                        <div class="flex items-center new-calendar">
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="ml-1">17 July 2019</span>
+                            </div>
+                            <div class="ml-9">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="ml-1">MARK ALEN</span>
+                            </div>
+                        </div>
+                        <h2>How to Learn English fast and Easy</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, hic soluta temporibus </p>
+                    </div>
+                </div>
+
+                <div class="new-card">
+                    <div class="new-top">
+                        <img src="./src/imgs/news-1.jpg" />
+                    </div>
+                    <div class="new-bottom">
+                        <div class="flex items-center new-calendar">
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="ml-1">17 July 2019</span>
+                            </div>
+                            <div class="ml-9">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="ml-1">MARK ALEN</span>
+                            </div>
+                        </div>
+                        <h2>How to Learn faster and Remember</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, hic soluta temporibus </p>
+                    </div>
+                </div>
+
+                <div class="new-card">
+                    <div class="new-top">
+                        <img src="./src/imgs/news-1.jpg" />
+                    </div>
+                    <div class="new-bottom">
+                        <div class="flex items-center new-calendar">
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="ml-1">17 July 2019</span>
+                            </div>
+                            <div class="ml-9">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="ml-1">MARK ALEN</span>
+                            </div>
+                        </div>
+                        <h2>Free online courses from top Universities</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, hic soluta temporibus </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo -->
+    <section id="logo">
+        <div class="container_content mx-auto px-4">
+            <div class="logo-container">
+
+                <div class="single-logo text-center ">
+                    <img src="./src/imgs/icon-1.png" alt="Logo">
+                </div>
+
+                <div class="single-logo text-center ">
+                    <img src="./src/imgs/icon-2.png" alt="Logo">
+                </div>
+
+                <div class="single-logo text-center ">
+                    <img src="./src/imgs/icon-3.png" alt="Logo">
+                </div>
+
+                <div class="single-logo text-center ">
+                    <img src="./src/imgs/icon-4.png" alt="Logo">
+                </div>
+
+                <div class="single-logo text-center ">
+                    <img src="./src/imgs/icon-5.png" alt="Logo">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer ">
+        <div class="footer-top">
+            <div class="container_content mx-auto px-4 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 sm:gap-8">
+                    <div class=" sm:col-span-2 md:col-span-1 lg:col-span-4">
+                        <div class="footer-about">
+                            <div class="logo">
+                                <a href="#"><img src="./src/imgs/logo-2.png" alt="Logo"></a>
+                            </div>
+                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh
+                                id elit. Duis sed odio sit amet nibh vulputate.</p>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-1 md:col-span-1 lg:col-span-3">
+                        <div class="footer-link ">
+                            <div class="footer-title">
+                                <h6>Sitemap</h6>
+                            </div>
+                            <div class="flex w-full">
+                                <ul class="flex-1">
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>About us</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Courses</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>News</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Event</a></li>
+                                </ul>
+                                <ul class="flex-1">
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Shop</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Teachers</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-1 md:col-span-1 lg:col-span-2">
+                        <div class="footer-link ">
+                            <div class="footer-title ">
+                                <h6>Support</h6>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=" sm:col-span-2 md:col-span-1 lg:col-span-3">
+                        <div class="footer-address ">
+                            <div class="footer-title ">
+                                <h6>Contact Us</h6>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>+3 123 456 789</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="address-text">
+                                        <p>info@yourmail.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container_content mx-auto px-4 flex md:flex-row flex-col justify-between items-center">
+                <p class="text-white">© Copyrights 2020 Edubin All rights reserved. </p>
+                <p class="text-white">Designed by <span>quannt86</span> </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
