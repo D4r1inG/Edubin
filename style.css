@@ -1436,6 +1436,10 @@ h6 {
         padding-top: 65px;
         padding-bottom: 70px;
     }
+
+    .about-right{
+        padding: 20px;
+    }
 }
 
 @media (min-width: 768px) {
